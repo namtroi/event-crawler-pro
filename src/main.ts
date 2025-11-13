@@ -8,21 +8,20 @@ config();
 
 // These should be the "List" pages.
 const requestsWithSiteData = [
-  {
-    url: 'https://asiasociety.org/new-york',
-    userData: {
-      siteName: 'asiaSociety', // Label for Asia Society
-      label: 'DEFAULT', // Start with the list handler
-    },
-  },
   // {
-  //   url: 'https://another-event-site.com/events',
+  //   url: 'https://asiasociety.org/seattle',
   //   userData: {
-  //     siteName: 'anotherSite', // Label for the other site
-  //     label: 'DEFAULT',
+  //     siteName: 'asiaSociety', // Label for Asia Society
+  //     label: 'DEFAULT', // Start with the list handler
   //   },
   // },
-  // ... add more sites here
+  {
+    url: 'https://www.scandinaviahouse.org/events/', // <-- NEW START URL
+    userData: {
+      siteName: 'scandinaviaHouse', // <-- NEW LABEL
+      label: 'DEFAULT',
+    },
+  },
 ];
 
 // Initialize the crawler
@@ -31,14 +30,15 @@ const crawler = new PlaywrightCrawler({
   requestHandler: router,
 
   // (Optional but Recommended)
-  maxRequestsPerCrawl: 5,
-  maxRequestsPerMinute: 5, // Be nice to their servers
-  headless: false,
-  launchContext: {
-    launchOptions: {
-      slowMo: 500,
-    },
-  },
+  maxRequestsPerCrawl: 20,
+  maxConcurrency: 10,
+  maxRequestsPerMinute: 20, // Be nice to their servers
+  // headless: false,
+  // launchContext: {
+  //   launchOptions: {
+  //     slowMo: 500,
+  //   },
+  // },
 });
 
 // Run the crawler
