@@ -17,7 +17,7 @@
     "postinstall": "npx crawlee install-playwright-browsers"
   },
   "author": "It's not you it's me",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
