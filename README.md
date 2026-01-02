@@ -1,4 +1,4 @@
-# EventCrawler Pro
+# Event Crawler Pro
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)](https://playwright.dev/)
@@ -35,8 +35,8 @@ A robust, modular web crawler designed to scrape event data from various website
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/namtroi/my-event-crawler.git
-    cd my-event-crawler
+    git clone https://github.com/namtroi/event-crawler-pro.git
+    cd event-crawler-pro
     ```
 
 2.  **Install dependencies**
